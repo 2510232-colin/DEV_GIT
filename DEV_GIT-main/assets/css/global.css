@@ -1,0 +1,96 @@
+/* ===============================
+   1) Variables de diseño global
+   =============================== */
+:root {
+  --color-primary: #1b497a;
+  --color-accent: #ee732f;
+  --color-bg: #ecf0f3;
+
+  --color-surface: #ffffff;
+  --color-text: #16324f;
+  --color-text-muted: #4c5d70;
+  --color-border: rgba(27, 73, 122, 0.16);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 4px 10px rgba(22, 50, 79, 0.08);
+  --shadow-md: 0 12px 28px rgba(22, 50, 79, 0.12);
+
+  --container-max: 1120px;
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+}
+
+/* ===============================
+   2) Reset y base semántica
+   =============================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ===============================
+   3) Utilidades de layout
+   =============================== */
+.container {
+  width: min(100% - 2rem, var(--container-max));
+  margin-inline: auto;
+}
+
+section {
+  padding-block: var(--space-6);
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: var(--space-2);
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-block: var(--space-5);
+  }
+}

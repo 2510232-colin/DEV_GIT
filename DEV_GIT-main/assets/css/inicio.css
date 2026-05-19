@@ -1,0 +1,75 @@
+/* ===============================
+   Estilos exclusivos de la home
+   =============================== */
+
+/* Hero principal */
+.hero {
+  padding-top: calc(var(--space-6) + 0.5rem);
+}
+
+.hero-layout {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.hero-content {
+  max-width: 760px;
+  padding: clamp(1.2rem, 2vw, 1.75rem);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(145deg, #ffffff, #f5f8fb);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-kicker {
+  margin-bottom: var(--space-2);
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.hero-subtitle {
+  max-width: 64ch;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+/* Sección estudiantes */
+.students {
+  padding-top: var(--space-5);
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+/* Sección comunidad */
+.purpose {
+  padding-top: var(--space-5);
+}
+
+/* Adaptación responsive */
+@media (max-width: 1024px) {
+  .students-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+}
