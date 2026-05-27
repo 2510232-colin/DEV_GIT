@@ -1,3 +1,8 @@
+
+## <-------------------------------------->
+##  CREA TU PROPIA RAMA Y TRABAJA EN ELLA
+## <-------------------------------------->
+
 ## 1) ¿Qué SÍ puedes editar?
 
 - Tu archivo dentro de `pages/perfiles/`
